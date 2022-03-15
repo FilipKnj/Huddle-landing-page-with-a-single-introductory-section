@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: url(../images/bg-desktop.svg), -webkit-gradient(linear, left top, left bottom, from(#e882e8), to(#674baf));
+  background: url(../images/bg-desktop.svg), linear-gradient(180deg, #e882e8, #674baf);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.card {
+  padding: 2%;
+}
+
+.card-header img {
+  width: 15%;
+  height: auto;
+  margin-left: 1.5rem;
+}
+
+.card-middle-part {
+  margin-top: 4.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1%;
+}
+.card-middle-part .card-middle-left {
+  width: 55%;
+}
+.card-middle-part .card-middle-right .text {
+  color: #fff;
+  padding: 3%;
+  margin: 1.5rem 2rem;
+}
+.card-middle-part .card-middle-right .text h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+.card-middle-part .card-middle-right .text p {
+  font-family: "Open Sans", sans-serif;
+  word-wrap: break-word;
+  width: 500px;
+  line-height: 1.5rem;
+  margin-top: 2rem;
+}
+.card-middle-part .card-middle-right .text button {
+  font-size: 1rem;
+  width: 170px;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  line-height: 50px;
+  margin-top: 1rem;
+  cursor: pointer;
+  color: #674baf;
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 11px 10px 14px -1px rgba(0, 0, 0, 0.32);
+          box-shadow: 11px 10px 14px -1px rgba(0, 0, 0, 0.32);
+}
+.card-middle-part .card-middle-right .text button:hover {
+  background-color: #e882e8;
+  color: #fff;
+}
+.card-middle-part .card-middle-right .links-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 10rem;
+}
+.card-middle-part .card-middle-right .links-div a {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  margin: 0 5px;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: 2px solid #fff;
+}
+.card-middle-part .card-middle-right .links-div a:hover {
+  border: 2px solid #e882e8;
+}
+.card-middle-part .card-middle-right .links-div a:hover i {
+  color: #e882e8;
+}
+.card-middle-part .card-middle-right .links-div a i {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    min-height: 100vh;
+    overflow: scroll;
+    background: url(../images/bg-mobile.svg), -webkit-gradient(linear, left top, right top, from(#e882e8), to(#674baf));
+    background: url(../images/bg-mobile.svg), linear-gradient(90deg, #e882e8, #674baf);
+  }
+
+  .container {
+    padding: 2%;
+  }
+
+  .card {
+    width: 100%;
+    padding: 1%;
+    margin: 20px auto;
+  }
+  .card .card-header img {
+    width: 40%;
+    height: auto;
+  }
+  .card .card-middle-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 2rem;
+  }
+  .card .card-middle-part .card-middle-left {
+    width: 100%;
+  }
+  .card .card-middle-part .card-middle-left img {
+    width: 100%;
+    height: auto;
+  }
+  .card .card-middle-part .card-middle-right {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .card .card-middle-part .card-middle-right .text {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .card .card-middle-part .card-middle-right .text h1 {
+    font-size: 1.4rem;
+  }
+  .card .card-middle-part .card-middle-right .text p {
+    width: 300px;
+  }
+  .card .card-middle-part .card-middle-right .text button {
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 1.4rem;
+  }
+  .card .card-middle-part .card-middle-right .links-div {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 1rem;
+  }
+}
